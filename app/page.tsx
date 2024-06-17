@@ -1,6 +1,6 @@
 import Image from "next/image";
 import DownloadButton from "./components/DownloadButton";
-import LinkedinButton from "./components/LinkeidnButton";
+import LinkedinButton from "./components/LinkedinButton";
 import GithubButton from "./components/GithubButton";
 import Certifications from "./components/Certifications";
 
