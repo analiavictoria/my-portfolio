@@ -52,13 +52,13 @@ body {
   }
 
   .btn-secondary {
-    background-color: #6b7280; 
+    background-color: #f54a88; 
     color: #ffffff; 
     border-color: transparent;
   }
 
   .btn-secondary:hover {
-    background-color: #4b5563; 
+    background-color: #f54a88; 
   }
 
   .btn-outline {
@@ -88,7 +88,7 @@ body {
   }
 
   .chip:hover{
-    background-color: #44a5a5;
+    background-color: #f54a88;
   }
 
   .link{

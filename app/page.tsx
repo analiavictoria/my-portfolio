@@ -2,6 +2,7 @@ import Image from "next/image";
 import DownloadButton from "./components/DownloadButton";
 import LinkedinButton from "./components/LinkeidnButton";
 import GithubButton from "./components/GithubButton";
+import Certifications from "./components/Certifications";
 
 export default function Home() {
 
@@ -93,7 +94,7 @@ export default function Home() {
                 <h3 className="mb-3 text-xl md:text-2xl leading-tight font-bold">Educação</h3>
                 <p className="text-coolGray-500 font-medium">Bacharel em Sistemas de Informação</p>
                 <p className="text-coolGray-500">Centro Universitário Fametro (2020-2023)</p>
-                <p className="text-coolGray-500 font-medium mt-2">Programador Web</p>
+                <Certifications></Certifications>
                 <p className="text-coolGray-500">FPF Tech (2019, 5 meses)</p>
               </div>
             </div>
