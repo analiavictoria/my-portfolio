@@ -14,6 +14,6 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     fs.writeFileSync(filePath, JSON.stringify(data));
     res.status(200).json({ visits: data.visits });
   } else {
-    res.status(405).end();
+    res.status(405).end(); // Método não permitido
   }
 }
