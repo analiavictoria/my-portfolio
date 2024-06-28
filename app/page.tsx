@@ -35,10 +35,6 @@ export default function Home() {
           </ul>
         </div>
       </nav>
-
-      <div className="px-4">
-       <PageVisits/>
-      </div>
       
 
       {/*HERO*/}
