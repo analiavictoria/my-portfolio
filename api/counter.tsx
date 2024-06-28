@@ -1,10 +1,10 @@
-// api/counter.js
 import fs from 'fs';
 import path from 'path';
+import { NextApiRequest, NextApiResponse } from 'next';
 
 const filePath = path.join(__dirname, 'visits.json');
 
-export default async function handler(req, res) {
+export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method === 'GET') {
     const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
     res.status(200).json({ visits: data.visits });
