@@ -74,6 +74,7 @@ body {
   }
   .chip{
     display: 'inline-block';
+    width: 4rem;
     padding-top: 2px;
     padding-bottom: 2px;
     padding-left: 0.5rem;

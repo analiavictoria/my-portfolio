@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 
-const Certifications = () => {
+const FPFCertification = () => {
   const [isTooltipVisible, setTooltipVisible] = useState(false);
 
   const handleCertification = () => {
@@ -21,11 +21,11 @@ const Certifications = () => {
       </a>
       {isTooltipVisible && (
         <div className="absolute bg-pink-400 text-white text-sm px-2 py-1 rounded-md whitespace-nowrap shadow-lg top-full left-1/2 transform -translate-x-1/2 opacity-100 pointer-events-auto transition-opacity duration-300">
-          Clique para checar o meu certificado!
+          Clique para conferir o meu certificado!
         </div>
       )}
     </div>
   );
 };
 
-export default Certifications;
+export default FPFCertification;
