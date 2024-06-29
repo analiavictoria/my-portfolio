@@ -8,35 +8,35 @@ export default function Stack() {
   const list = [
     {
       title: "Javascript",
-      img: "/images/javascript.png",
+      img: "/icons/javascript2.png",
     },
     {
       title: "Typescript",
-      img: "/images/typescript.png",
+      img: "/icons/typescript2.png",
     },
     {
       title: "Angular",
-      img: "/images/angular.png",
+      img: "/icons/angular2.png",
     },
     {
-      title: "CSS3",
-      img: "/images/css3.png",
+      title: "React",
+      img: "/icons/react.png",
     },
     {
-      title: "HTML5",
-      img: "/images/html5.png",
+      title: "C#",
+      img: "/icons/csharp.png",
     },
     {
       title: "Nextjs",
-      img: "/images/nextjs.svg",
+      img: "/icons/nextjs2.png",
     },
     {
       title: "Git",
-      img: "/images/git.png",
+      img: "/icons/git2.png",
     },
     {
       title: "Tailwind",
-      img: "/images/tailwindcss.svg",
+      img: "/icons/tailwindcss2.png",
     },
   ];
 

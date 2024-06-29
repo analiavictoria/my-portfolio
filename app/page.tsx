@@ -65,6 +65,17 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/*FOOTER*/}
+      <section id="contato" className="w-full px-4 mx-auto my-4">
+        <div className="container px-4 mx-auto">
+          <span className="chip">Conecte-se</span>
+          <h1 className="flex my-4 text-3xl md:text-4xl leading-tight font-bold tracking-tighter justify-center">Contate-me</h1>
+          <div className="flex flex-wrap -mx-4">
+            <div className="w-full md:w-1/2 px-4 mb-8"><h1>em construção</h1></div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
