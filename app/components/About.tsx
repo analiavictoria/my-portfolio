@@ -19,7 +19,7 @@ export default function About() {
             <div className="container px-4 mx-auto text-center">
                 <span className="chip">Sobre</span>
             </div>
-            <h1 className="flex my-4 text-3xl md:text-5xl leading-tight font-bold tracking-tighter justify-center">
+            <h1 className="flex my-4 text-3xl md:text-5xl leading-tight font-bold tracking-tighter justify-center py-6">
                 Sobre Mim
             </h1>
             <div className="pb-8">
@@ -30,7 +30,7 @@ export default function About() {
                     <span>Saiba mais</span>
                 </button>
 
-                <p style={{ display: showMe ? "block" : "none" }} className='flex items-center space-x-2 px-20 py-5'>
+                <p style={{ display: showMe ? "block" : "none" }} className='flex items-center space-x-2 px-20 pt-5'>
                     Nascida em 1998, natural de Manaus, sou formada em Sistemas de Informação pelo Centro Universitário Fametro e como Programadora Web pela FPF Tech. Sou bilíngue e falo português nativo e inglês C1. Minha experiência acadêmica e profissional abrange mais de 3 anos de prática em desenvolvimento de software e 2 anos em gerenciamento de projetos.
                 </p>
             </div>

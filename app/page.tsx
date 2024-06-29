@@ -1,12 +1,14 @@
 import Stack from "./components/TechStack";
 import About from "./components/About";
 import Hero from "./components/Hero";
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import Link from "next/link";
 
 export default function Home() {
   return (
     <>
       {/*NAV BAR*/}
-      <nav className="flex justify-between p-6 px-4">
+      <nav id="nav" className="flex justify-between p-6 px-4">
         <div className="flex justify-between items-center w-full">
           <div className="w-1/2 xl:w-1/3">
             <p className="text-lg font-bold">Analia Silva</p>
@@ -46,36 +48,44 @@ export default function Home() {
 
       {/*PROJECTS*/}
       <section id="projetos" className="w-full px-4 mx-auto my-4">
-        <div className="container px-4 mx-auto">
+        <div className="container px-4 mx-auto text-center">
           <span className="chip">Projetos</span>
           <h1 className="flex my-4 text-3xl md:text-4xl leading-tight font-bold tracking-tighter justify-center">Meus projetos</h1>
           <div className="flex flex-wrap -mx-4">
-            <div className="w-full md:w-1/2 px-4 mb-8"><h1>em construção</h1></div>
+            <div className="w-full  px-4 mb-8"><h1>em construção</h1></div>
           </div>
         </div>
       </section>
 
       {/*CONTACT*/}
       <section id="contato" className="w-full px-4 mx-auto my-4">
-        <div className="container px-4 mx-auto">
+        <div className="container px-4 mx-auto text-center">
           <span className="chip">Conecte-se</span>
           <h1 className="flex my-4 text-3xl md:text-4xl leading-tight font-bold tracking-tighter justify-center">Contate-me</h1>
           <div className="flex flex-wrap -mx-4">
-            <div className="w-full md:w-1/2 px-4 mb-8"><h1>em construção</h1></div>
+            <div className="w-full px-4 mb-8"><h1>em construção</h1></div>
           </div>
         </div>
       </section>
 
       {/*FOOTER*/}
-      <section id="contato" className="w-full px-4 mx-auto my-4">
-        <div className="container px-4 mx-auto">
-          <span className="chip">Conecte-se</span>
-          <h1 className="flex my-4 text-3xl md:text-4xl leading-tight font-bold tracking-tighter justify-center">Contate-me</h1>
-          <div className="flex flex-wrap -mx-4">
-            <div className="w-full md:w-1/2 px-4 mb-8"><h1>em construção</h1></div>
-          </div>
+      <footer className="bg-pink-500 text-white py-4">
+      <div className="container mx-auto flex justify-center">
+        <Link href="#nav" className="pr-5">Início
+        </Link>
+        <div className="flex space-x-4">
+          <a href="https://github.com/analiavictoria" target="_blank" rel="noopener noreferrer" className="text-white hover:text-pink-200">
+            <FaGithub size={24} />
+          </a>
+          <a href="https://linkedin.com/in/analiavictoria" target="_blank" rel="noopener noreferrer" className="text-white hover:text-pink-200">
+            <FaLinkedin size={24} />
+          </a>
         </div>
-      </section>
+      </div>
+      <div className="container mx-auto text-center mt-4">
+        <p>&copy; {new Date().getFullYear()} Analia Silva</p>
+      </div>
+    </footer>
     </>
   );
 }

@@ -43,7 +43,7 @@ export default function Stack() {
   return (
     <div className="min-h-screen flex flex-col justify-center items-center px-4 text-center">
       <span className="chip">Stack</span>
-      <h1 className="my-4 py-4 text-5xl md:text-4xl leading-tight font-bold tracking-tighter">
+      <h1 className="flex my-4 text-3xl md:text-5xl leading-tight font-bold tracking-tighter justify-center pt-4 pb-6">
         Tecnologias
       </h1>
       <div className="flex justify-center w-full">
