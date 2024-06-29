@@ -6,7 +6,7 @@ import Link from 'next/link';
 export default function Hero() {
 
     const handleDownload = () => {
-        window.open('/CV-PT-BR-AnaliaSilva.pdf');
+        window.open('/CV PT BR Fullstack Analia Silva.pdf');
       };
 
     return (
