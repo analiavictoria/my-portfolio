@@ -22,7 +22,7 @@ export default function Hero() {
         <div className="w-full md:w-1/2 px-4">
           <span className="chip">Olá</span>
           <h1 className="my-4 text-xl md:text-5xl lg:text-6xl leading-tight font-bold tracking-tight">Bem-vindo(a)!</h1>
-          <p className="mb-8 text-lg md:text-xl text-coolGray-500 font-medium">Prazer! Sou Analia, desenvolvedora front-end.<br /> Seja muito bem vindo e confira o meu portfólio!</p>
+          <p className="mb-8 text-lg md:text-xl text-coolGray-500 font-medium">Prazer! Sou Analia, desenvolvedora full stack.<br /> Seja muito bem vindo e confira o meu portfólio!</p>
 
           <div className="flex flex-wrap space-x-4">
           <button className="btn btn-primary" onClick={handleDownload}>

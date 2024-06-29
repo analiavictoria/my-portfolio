@@ -14,13 +14,12 @@ export default function About() {
         setShowMe(!showMe);
     }
 
-
     return (
         <div className="min-h-screen flex flex-col">
             <div className="container px-4 mx-auto text-center">
                 <span className="chip">Sobre</span>
             </div>
-            <h1 className="flex my-4 text-3xl md:text-4xl leading-tight font-bold tracking-tighter justify-center">
+            <h1 className="flex my-4 text-3xl md:text-5xl leading-tight font-bold tracking-tighter justify-center">
                 Sobre Mim
             </h1>
             <div className="pb-8">
