@@ -31,14 +31,14 @@ export default function About() {
                 </button>
 
                 <p style={{ display: showMe ? "block" : "none" }} className='flex items-center space-x-2 px-20 pt-5'>
-                    Nascida em 1998, natural de Manaus, sou formada em Sistemas de Informação pelo Centro Universitário Fametro e como Programadora Web pela FPF Tech. Sou bilíngue e falo português nativo e inglês C1. Minha experiência acadêmica e profissional abrange mais de 3 anos de prática em desenvolvimento de software e 2 anos em gerenciamento de projetos.
+                    Nascida em 1998, natural de Manaus, sou formada em Sistemas de Informação pelo Centro Universitário Fametro e como Programadora Web pela <a href='https://fpftech.com'target="_blank"title="Conheça o instituto" className='underline'>FPF Tech</a>. Sou bilíngue e falo português nativo e inglês C1. Minha experiência acadêmica e profissional abrange mais de 3 anos de prática em desenvolvimento de software e 2 anos em gerenciamento de projetos, após estagiar no Sidia por dois anos, atuando em celulares e tablets da Samsung.
                 </p>
             </div>
             <div className="flex flex-wrap -mx-4">
                 <div className="w-full md:w-1/2 px-4 mb-8">
                     <div className="h-full p-8 text-center">
                         <div className="inline-flex h-16 w-16 mb-7 mx-auto items-center justify-center">
-                            <img src="/curriculo.png" alt="Icone de graduação" />
+                            <img src="/icons/curriculo.png" alt="Icone de graduação" />
                         </div>
                         <h3 className="mb-3 text-xl md:text-2xl leading-tight font-bold">
                             Experiência
@@ -52,7 +52,7 @@ export default function About() {
                 <div className="w-full md:w-1/2 px-4 mb-8">
                     <div className="h-full p-8 text-center rounded-md">
                         <div className="inline-flex h-16 w-16 mb-7 mx-auto items-center justify-center">
-                            <img src="/diploma2.png" alt="Icone de graduação" />
+                            <img src="/icons/diploma2.png" alt="Icone de graduação" />
                         </div>
                         <h3 className="mb-3 text-xl md:text-2xl leading-tight font-bold">
                             Educação
