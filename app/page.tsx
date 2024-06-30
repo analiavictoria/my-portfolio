@@ -54,7 +54,7 @@ export default function Home() {
           <div className="flex flex-wrap justify-center items-center -mx-4">
             <div className="px-4 mb-8">
               <p className="flex justify-center border-b border-gray-300 p-6 lg:static lg:w-auto lg:rounded-xl lg:border">
-                <code className="font-mono">em construção</code>
+                <code className="font-mono">🚧 Em construção. Projetos disponíveis no Github.</code>
               </p>
             </div>
           </div>
@@ -69,7 +69,7 @@ export default function Home() {
           <div className="flex flex-wrap justify-center items-center -mx-4">
             <div className="px-4 mb-8">
               <p className="flex justify-center border-b border-gray-300 p-6 lg:static lg:w-auto lg:rounded-xl lg:border">
-                <code className="font-mono">em construção</code>
+                <code className="font-mono">🚧 Em construção. Contato disponível no Linkedin.</code>
               </p>
             </div>
           </div>
