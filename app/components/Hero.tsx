@@ -8,7 +8,7 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 export default function Hero() {
 
   const handleDownload = () => {
-    window.open('/CV PT BR Fullstack Analia Silva.pdf');
+    window.open('/CV Fullstack Analia Silva.pdf');
   };
 
   return (
