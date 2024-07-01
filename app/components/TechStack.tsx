@@ -8,52 +8,52 @@ export default function Stack() {
   const list = [
     {
       title: "Javascript",
-      img: "/images/javascript.png",
+      img: "/icons/javascript2.png",
     },
     {
       title: "Typescript",
-      img: "/images/typescript.png",
+      img: "/icons/typescript2.png",
     },
     {
       title: "Angular",
-      img: "/images/angular.png",
+      img: "/icons/angular2.png",
     },
     {
-      title: "CSS3",
-      img: "/images/css3.png",
+      title: "React",
+      img: "/icons/react.png",
     },
     {
-      title: "HTML5",
-      img: "/images/html5.png",
+      title: "C#",
+      img: "/icons/csharp.png",
     },
     {
       title: "Nextjs",
-      img: "/images/nextjs.svg",
+      img: "/icons/nextjs2.png",
     },
     {
       title: "Git",
-      img: "/images/git.png",
+      img: "/icons/git2.png",
     },
     {
       title: "Tailwind",
-      img: "/images/tailwindcss.svg",
+      img: "/icons/tailwindcss2.png",
     },
   ];
 
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center px-4 text-center">
+    <div className="flex flex-col px-4 justify-center items-center text-center">
       <span className="chip">Stack</span>
-      <h1 className="my-4 py-4 text-3xl md:text-4xl leading-tight font-bold tracking-tighter">
+      <h1 className="my-10 mb-20 text-4xl md:text-5xl lg:text-6xl leading-tight font-bold tracking-tighter">
         Tecnologias
       </h1>
-      <div className="flex justify-center w-full">
-        <div className="gap-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 justify-items-center">
+      
+        <div className="gap-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
           {list.map((item, index) => (
             <Card
               className="shadow-lg p-10 mb-4 transition-transform transform hover:scale-105 rounded-lg"
               key={index}
             >
-              <CardBody className="flex justify-center items-center p-4">
+              <CardBody className="p-4">
                 <Image
                   width={50}
                   height={50}
@@ -62,13 +62,12 @@ export default function Stack() {
                   src={item.img}
                 />
               </CardBody>
-              <CardFooter className="flex justify-center items-center">
+              <CardFooter className="flex justify-center">
                 <b>{item.title}</b>
               </CardFooter>
             </Card>
           ))}
         </div>
-      </div>
     </div>
   );
 }
