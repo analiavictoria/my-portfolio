@@ -1,6 +1,8 @@
 import Stack from "./components/TechStack";
 import About from "./components/About";
 import Hero from "./components/Hero";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import Link from "next/link";
 
@@ -8,7 +10,7 @@ export default function Home() {
   return (
     <>
       {/*NAV BAR*/}
-      <nav id="nav" className="flex justify-between p-6 px-4">
+      <nav id="inicio" className="flex justify-between p-6 px-4">
         <div className="flex justify-between items-center w-full">
           <div className="w-1/2 xl:w-1/3">
             <p className="text-lg font-bold">Analia Silva</p>
@@ -34,59 +36,41 @@ export default function Home() {
       </nav>
 
       {/*HERO*/}
-      <Hero />
+      <section className="min-h-screen w-full px-4 mx-auto my-4 flex items-center justify-center">
+        <Hero />
+      </section>
 
       {/*ABOUT*/}
-      <section id="sobre" className="w-full px-4 mx-auto my-4">
+      <section id="sobre" className="min-h-screen w-full px-4 mx-auto my-4 flex items-center justify-center">
         <About />
       </section>
 
       {/*STACK*/}
-      <section id="stack" className="w-full">
+      <section id="stack" className="min-h-screen w-full px-4 mx-auto my-4 flex items-center justify-center">
         <Stack />
       </section>
 
       {/* PROJECTS */}
-      <section id="projetos" className="w-full px-4 mx-auto my-4">
-        <div className="container px-4 mx-auto text-center">
-          <span className="chip">Projetos</span>
-          <h1 className="my-4 text-3xl md:text-4xl leading-tight font-bold tracking-tighter">Meus projetos</h1>
-          <div className="flex flex-wrap justify-center items-center -mx-4">
-            <div className="px-4 mb-8">
-              <p className="flex justify-center border-b border-gray-300 p-6 lg:static lg:w-auto lg:rounded-xl lg:border">
-                <code className="font-mono">🚧 Em construção. Projetos disponíveis no Github.</code>
-              </p>
-            </div>
-          </div>
-        </div>
+      <section id="projetos" className="w-full px-4 mx-auto my-4 flex items-center justify-center">
+       <Projects />
       </section>
 
       {/* CONTACT */}
-      <section id="contato" className="w-full px-4 mx-auto my-4">
-        <div className="container px-4 mx-auto text-center">
-          <span className="chip">Conecte-se</span>
-          <h1 className="my-4 text-3xl md:text-4xl leading-tight font-bold tracking-tighter">Contate-me</h1>
-          <div className="flex flex-wrap justify-center items-center -mx-4">
-            <div className="px-4 mb-8">
-              <p className="flex justify-center border-b border-gray-300 p-6 lg:static lg:w-auto lg:rounded-xl lg:border">
-                <code className="font-mono">🚧 Em construção. Contato disponível no Linkedin.</code>
-              </p>
-            </div>
-          </div>
-        </div>
+      <section id="contato" className="w-full px-4 mx-auto my-4 flex items-center justify-center">
+       <Contact />
       </section>
 
 
       {/*FOOTER*/}
       <footer className="bg-black text-white py-4">
         <div className="container mx-auto flex justify-center">
-          <Link href="#nav" className="pr-5">Início
+          <Link href="#inicio" className="pr-5 hover:text-[#f54a88]">Início
           </Link>
           <div className="flex space-x-4">
-            <a href="https://github.com/analiavictoria" target="_blank" rel="noopener noreferrer" className="text-white hover:text-pink-200">
+            <a href="https://github.com/analiavictoria" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#f54a88]">
               <FaGithub size={24} />
             </a>
-            <a href="https://linkedin.com/in/analiavictoria" target="_blank" rel="noopener noreferrer" className="text-white hover:text-pink-200">
+            <a href="https://linkedin.com/in/analiavictoria" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#f54a88]">
               <FaLinkedin size={24} />
             </a>
           </div>

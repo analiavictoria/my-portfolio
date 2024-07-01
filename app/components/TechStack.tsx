@@ -41,19 +41,19 @@ export default function Stack() {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center px-4 text-center">
+    <div className="flex flex-col px-4 justify-center items-center text-center">
       <span className="chip">Stack</span>
-      <h1 className="flex my-4 text-3xl md:text-5xl leading-tight font-bold tracking-tighter justify-center pt-4 pb-6">
+      <h1 className="my-10 mb-20 text-4xl md:text-5xl lg:text-6xl leading-tight font-bold tracking-tighter">
         Tecnologias
       </h1>
-      <div className="flex justify-center w-full">
-        <div className="gap-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 justify-items-center">
+      
+        <div className="gap-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
           {list.map((item, index) => (
             <Card
               className="shadow-lg p-10 mb-4 transition-transform transform hover:scale-105 rounded-lg"
               key={index}
             >
-              <CardBody className="flex justify-center items-center p-4">
+              <CardBody className="p-4">
                 <Image
                   width={50}
                   height={50}
@@ -62,13 +62,12 @@ export default function Stack() {
                   src={item.img}
                 />
               </CardBody>
-              <CardFooter className="flex justify-center items-center">
+              <CardFooter className="flex justify-center">
                 <b>{item.title}</b>
               </CardFooter>
             </Card>
           ))}
         </div>
-      </div>
     </div>
   );
 }
