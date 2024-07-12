@@ -12,7 +12,7 @@ function Navigation() {
     <nav id="inicio" className="flex justify-between p-6 px-4">
       <div className="flex justify-between items-center w-full">
         <div className="w-1/2 xl:w-1/3">
-          <p className="text-lg font-bold">Lia</p>
+          <p className="text-lg font-bold">Analia Silva</p>
         </div>
 
         {/* Menu for large screens */}
