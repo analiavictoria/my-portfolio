@@ -1,39 +1,20 @@
-import Stack from "./components/TechStack";
-import About from "./components/About";
+import React from 'react'
+import NavBar from "./components/NavBar";
 import Hero from "./components/Hero";
+import About from "./components/About";
+import Stack from "./components/TechStack";
+import Courses from "./components/Courses";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import Link from "next/link";
 
+
 export default function Home() {
   return (
     <>
       {/*NAV BAR*/}
-      <nav id="inicio" className="flex justify-between p-6 px-4">
-        <div className="flex justify-between items-center w-full">
-          <div className="w-1/2 xl:w-1/3">
-            <p className="text-lg font-bold">Analia Silva</p>
-          </div>
-          <ul className="hidden xl:flex xl:justify-center">
-            <li className="mr-6">
-              <a className="link" href="#inicio">Início</a>
-            </li>
-            <li className="mr-6">
-              <a className="link" href="#sobre">Sobre</a>
-            </li>
-            <li className="mr-6">
-              <a className="link" href="#stack">Stack</a>
-            </li>
-            <li className="mr-6">
-              <a className="link" href="#projetos">Projetos</a>
-            </li>
-            <li className="mr-6">
-              <a className="link" href="#contato">Contato</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <NavBar />
 
       {/*HERO*/}
       <section className="min-h-screen w-full px-4 mx-auto my-4 flex items-center justify-center">
@@ -48,6 +29,11 @@ export default function Home() {
       {/*STACK*/}
       <section id="stack" className="min-h-screen w-full px-4 mx-auto my-4 flex items-center justify-center">
         <Stack />
+      </section>
+
+      {/*COURSES */}
+      <section id="cursos" className="w-full px-4 mx-auto my-4 flex items-center justify-center">
+       <Courses />
       </section>
 
       {/* PROJECTS */}

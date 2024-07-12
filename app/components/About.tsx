@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 export default function About() {
     const [isTooltipVisible, setTooltipVisible] = useState(false);
@@ -10,19 +11,17 @@ export default function About() {
     };
 
     return (
-        <div className="justify-center items-center px-4 text-center">
+        <div className="justify-center items-center px-4 text-center pb-20">
             <span className="chip">Sobre</span>
             <h1 className="my-10 text-4xl md:text-5xl lg:text-6xl leading-tight font-bold tracking-tighter">
                 Sobre Mim
             </h1>
-            <div className="pb-8">
-                <p className="flex items-center px-5 lg:px-40 pb-20 pt-5 text-xl">
-                    Nascida em 1998, natural de Manaus, sou formada em Sistemas de Informação pelo Centro Universitário Fametro e como Programadora Web pela FPF Tech. Sou bilíngue e falo português nativo e inglês C1. Minha trajetória acadêmica e profissional abrange mais de 3 anos de prática em desenvolvimento de software e 2 anos em gerenciamento de projetos, após estagiar no Sidia atuando em celulares e tablets da Samsung.
+                <p className="flex items-center justify-center text-base px-20 pb-20 text-justify ">
+                    Nascida em 1998, natural de Manaus, sou formada em Sistemas de Informação pelo Centro Universitário Fametro e como Programadora Web pela FPF Tech. Sou bilíngue e falo português nativo e inglês C1. Minha trajetória acadêmica e profissional abrange mais de 3 anos de prática em desenvolvimento de software e 2 anos em gerenciamento de projetos, após estagiar no Sidia Instituto de Ciência e Tecnologia atuando em celulares e tablets da Samsung.
                 </p>
-            </div>
-
+           
             {/*CARDS*/}
-            <div className="flex flex-wrap justify-center gap-40">
+            <div className="flex flex-wrap justify-center gap-20">
                 <div className="md:[30rem] h-auto px-12 mb-8 shadow-lg p-10 transition-transform transform hover:scale-105 rounded-lg">
                     <div className="inline-flex h-16 w-16 mb-7 mx-auto">
                         <img src="/icons/curriculo.png" alt="Icone de graduação" />
