@@ -52,7 +52,7 @@ html {
   }
 
   .btn-primary:hover {
-    background-color: #f54a88; 
+    background-color: #000; 
   }
 
   .btn-secondary {
@@ -72,9 +72,9 @@ html {
   }
 
   .btn-outline:hover {
-    background-color: transparent; 
-    border-color: #f54a88;
-    color: #f54a88; 
+    background-color: #000; 
+    border-color: #fff;
+    color: #fff; 
   }
   .chip{
     display: 'inline-block';
