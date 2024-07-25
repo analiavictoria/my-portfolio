@@ -19,7 +19,7 @@ const projects: Project[] = [
     title: 'Coin Literacy',
     description: 'Trabalho de Conclusão de Curso, um sistema web para educação financeira em tecnologias disruptivas como blockchain e criptomoedas. Feito com React e Material UI.',
     sourceCodeUrl: 'https://github.com/analiavictoria/coin_literacy',
-    livePreviewUrl: ''
+    livePreviewUrl: 'https://coin-literacy.vercel.app'
   },
   {
     imageUrl: '/icons/meaw.png',
