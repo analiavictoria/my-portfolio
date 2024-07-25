@@ -15,21 +15,21 @@ export default function Courses() {
         <ul className="text-justify list-disc">
           <li>Inglês Upper Intermediate (Centro de Idiomas Martha Falcão, 4 anos, 2013)
           </li>
-          <li><a className="link" href="https://drive.google.com/file/d/18cdU1DaMW3U0JgXumvlDATLcaLNHtOEP/view?usp=sharing" target="_blank" rel="noopener noreferrer">Ética Empresarial</a>(Fundação Getúlio Vargas - FGV, 5h, 2019)
+          <li><a className="link" href="https://drive.google.com/file/d/18cdU1DaMW3U0JgXumvlDATLcaLNHtOEP/view?usp=sharing" target="_blank" rel="noopener noreferrer" title="Certificado disponível">Ética Empresarial</a> (Fundação Getúlio Vargas - FGV, 5h, 2019)
           </li>
           <li>Relacionamento Interpessoal (Secretaria Municipal do Trabalho, Empreendedorismo e Inovação, 20h, 2019)</li>
           <li>Testes de Software Web (Instituto Flexpeak, 49h, 2022)
           </li>
-          <li><a className="link" href="https://drive.google.com/file/d/1yd8Oz8BQIsjkC5gFhI9JdYY6so68qU9M/view?usp=sharing" target="_blank" rel="noopener noreferrer">Android Embarcardo</a>(Sidia Instituto de Ciência e Tecnologia, 20h, 2023)
+          <li><a className="link" href="https://drive.google.com/file/d/1yd8Oz8BQIsjkC5gFhI9JdYY6so68qU9M/view?usp=sharing" target="_blank" rel="noopener noreferrer" title="Certificado disponível">Android Embarcardo</a> (Sidia Instituto de Ciência e Tecnologia, 20h, 2023)
           </li>
-          <li><a className="link" href="https://drive.google.com/file/d/1fZ1Aur8exQ_1tG8qcVLsxY1rjvQXwxqR/view?usp=sharing" title="Certificado disponível" target="_blank" rel="noopener noreferrer">Leadership communication</a>(FIAP, 40h, 2024)
+          <li><a className="link" href="https://drive.google.com/file/d/1fZ1Aur8exQ_1tG8qcVLsxY1rjvQXwxqR/view?usp=sharing" target="_blank" rel="noopener noreferrer" title="Certificado disponível">Leadership communication</a> (FIAP, 40h, 2024)
           </li>
+          <li><a className="link" href="https://www.maismulheres.tech/certificates/uzo1tqalau" target="_blank" rel="noopener noreferrer" title="Certificado disponível">Introdução à Cloud Computing & Azure</a> (WoMakersCode, 2h, 2024)</li>
           <li>Fundamentos de Gerenciamento de Projetos (IBM SkillsBuild, 3h, 2024)
           </li>
           <li>API Rest (Ada Tech, 2h, 2024)</li>
           <li>Programação orientada a objetos em C# (Ada Tech, 5h, 2024)
           </li>
-          <li>Introdução a Cloud Computing (WhoMakersCOde, 2024)</li>
         </ul>
       </div>
 
