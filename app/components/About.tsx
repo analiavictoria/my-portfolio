@@ -17,7 +17,7 @@ export default function About() {
                 Sobre Mim
             </h1>
                 <p className="flex items-center justify-center text-base px-20 pb-20 text-justify ">
-                    Nascida em 1998, natural de Manaus, sou formada em Sistemas de Informação pelo Centro Universitário Fametro e como Programadora Web pela FPF Tech. Sou bilíngue e falo português nativo e inglês C1. Minha trajetória acadêmica e profissional abrange mais de 3 anos de prática em desenvolvimento de software e 2 anos em gerenciamento de projetos, após estagiar no Sidia Instituto de Ciência e Tecnologia atuando em celulares e tablets da Samsung.
+                    Nascida em 1998, natural de Manaus, sou formada em Sistemas de Informação pelo Centro Universitário Fametro e como Programadora Web pela FPF Tech. Sou bilíngue e falo português nativo e inglês C1. Minha trajetória acadêmica e profissional abrange mais de 3 anos de prática em desenvolvimento de software e 2 anos em gerenciamento de projetos, após estagiar no Sidia Instituto de Ciência e Tecnologia atuando em celulares e tablets da Samsung. Atualmente sou aluna AWS re/Start.
                 </p>
            
             {/*CARDS*/}

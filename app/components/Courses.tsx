@@ -24,11 +24,8 @@ export default function Courses() {
           </li>
           <li><a className="link" href="https://drive.google.com/file/d/1fZ1Aur8exQ_1tG8qcVLsxY1rjvQXwxqR/view?usp=sharing" target="_blank" rel="noopener noreferrer" title="Certificado disponível">Leadership communication</a> (FIAP, 40h, 2024)
           </li>
-          <li><a className="link" href="https://www.maismulheres.tech/certificates/uzo1tqalau" target="_blank" rel="noopener noreferrer" title="Certificado disponível">Introdução à Cloud Computing & Azure</a> (WoMakersCode, 2h, 2024)</li>
-          <li>Fundamentos de Gerenciamento de Projetos (IBM SkillsBuild, 3h, 2024)
-          </li>
-          <li>API Rest (Ada Tech, 2h, 2024)</li>
-          <li>Programação orientada a objetos em C# (Ada Tech, 5h, 2024)
+          <li><a className="link" href="https://www.maismulheres.tech/certificates/oaduyedaml" target="_blank" rel="noopener noreferrer" title="Certificado disponível">Introdução à Cloud Computing & Azure</a> (WoMakersCode, 20h, 2024)</li>
+          <li><a className="link" href="https://www.credly.com/badges/3a2a0524-3072-4b4d-a006-f3fe932c293e/public_url" target="_blank" rel="noopener noreferrer" title="Certificado disponível">Fundamentos de Gerenciamento de Projetos</a> (IBM SkillsBuild, 3h, 2024)
           </li>
         </ul>
       </div>
