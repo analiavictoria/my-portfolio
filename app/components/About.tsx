@@ -7,7 +7,7 @@ export default function About() {
     const [isTooltipVisible, setTooltipVisible] = useState(false);
 
     const handleCertification = () => {
-        window.open('https://drive.google.com/file/d/1DQKu1scTSg1ornkhXk60WK0SGiRIC_W5/view?usp=sharing');
+        window.open('https://drive.google.com/file/d/19O9lSwrGHIYtGKpYw2SmPr2X0Rh_ww9_/view?usp=sharing');
     };
 
     return (
@@ -16,10 +16,11 @@ export default function About() {
             <h1 className="my-10 text-4xl md:text-5xl lg:text-6xl leading-tight font-bold tracking-tighter">
                 Sobre Mim
             </h1>
-                <p className="flex items-center justify-center text-base px-20 pb-20 text-justify ">
-                    Nascida em 1998, natural de Manaus, sou formada em Sistemas de Informação pelo Centro Universitário Fametro e como Programadora Web pela FPF Tech. Sou bilíngue e falo português nativo e inglês C1. Minha trajetória acadêmica e profissional abrange mais de 3 anos de prática em desenvolvimento de software e 2 anos em gerenciamento de projetos, após estagiar no Sidia Instituto de Ciência e Tecnologia atuando em celulares e tablets da Samsung. Atualmente sou aluna AWS re/Start.
-                </p>
-           
+            <p className="flex items-center justify-center text-base px-20 pb-20 text-justify ">
+                Nascida em 1998, natural de Manaus, sou formada em Sistemas de Informação pelo Centro Universitário Fametro e em Programação Web pela FPF Tech. Sou bilíngue, com português nativo e inglês em nível C1. Minha trajetória acadêmica e profissional abrange mais de 3 anos de prática em desenvolvimento de software e 2 anos em gerenciamento de projetos, tendo estagiado no Sidia Instituto de Ciência e Tecnologia, onde atuei em projetos relacionados a celulares e tablets da Samsung. Atualmente, sou aluna do programa AWS re/Start.
+                Possuo habilidades interpessoais desenvolvidas, com tendência à liderança, sendo prestativa, perspicaz e cordial. Tenho uma comunicação eficaz e não temo falar em público, o que me permite interagir de forma assertiva e colaborativa em diversos ambientes profissionais.
+            </p>
+
             {/*CARDS*/}
             <div className="flex flex-wrap justify-center gap-20">
                 <div className="md:[30rem] h-auto px-12 mb-8 shadow-lg p-10 transition-transform transform hover:scale-105 rounded-lg">
