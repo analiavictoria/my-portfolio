@@ -23,6 +23,8 @@ export default function Courses() {
           <li><a className="link" href="https://www.maismulheres.tech/certificates/oaduyedaml" target="_blank" rel="noopener noreferrer" title="Certificado disponível">Introdução à Cloud Computing & Azure</a> (WoMakersCode, 20h, 2024)</li>
           <li><a className="link" href="https://www.credly.com/badges/3a2a0524-3072-4b4d-a006-f3fe932c293e/public_url" target="_blank" rel="noopener noreferrer">Fundamentos de Gerenciamento de Projetos</a> (IBM SkillsBuild, 3h, 2024)
           </li>
+          <li><a className="link" href="http://verify.skilljar.com/c/hg2doxieg6or" target="_blank" rel="noopener noreferrer">Introdução ao FinOps</a> (The FinOps Foundation, 1.5h, 2024)
+          </li>
           <li>AWS re/Start (Campinho Digital, 350h, cursando)
           </li>
         </ul>
