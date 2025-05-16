@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { CheckCircle, Hourglass, ChevronDown } from "lucide-react";
+import { CheckCircle, Hourglass } from "lucide-react";
 
 const courses = [
   {
@@ -117,9 +117,8 @@ const courses = [
 const categoryColors: Record<string, string> = {
   Idiomas: "bg-purple-200 text-purple-800",
   "Soft Skills": "bg-yellow-200 text-yellow-800",
-  Cloud: "bg-green-200 text-green-800",
   Tecnologia: "bg-blue-200 text-blue-800",
-  Gestão: "bg-orange-200 text-orange-800",
+  Gestão: "bg-green-200 text-green-800",
 };
 
 export default function Courses() {
@@ -147,7 +146,7 @@ export default function Courses() {
             className={`px-3 py-1 rounded-full font-semibold transition ${
               selectedCategory === cat
                 ? "bg-pink-400 text-white"
-                : "bg-pink-200 text-gray-700 hover:bg-gray-300"
+                : "bg-pink-200 text-gray-700 hover:bg-pink-300"
             }`}
             title={`Filtrar por categoria: ${cat}`}
           >
@@ -206,7 +205,7 @@ export default function Courses() {
 
               {course.badgeCredly && (
                 <span
-                  className="ml-2 px-2 py-0.5 text-xs bg-blue-600 text-white rounded-full font-semibold align-middle"
+                  className="ml-2 px-2 py-0.5 text-xs bg-orange-500 text-white rounded-full font-semibold align-middle"
                   title="Certificado Credly"
                 >
                   🏅 Credly

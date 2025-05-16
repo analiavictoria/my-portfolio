@@ -106,3 +106,44 @@ html {
 
   
 }
+
+.heart-shape {
+  display: grid;
+  grid-template-columns: repeat(9, 48px);
+  grid-template-rows: repeat(9, 48px);
+  gap: 20px;
+  justify-content: center;
+  align-content: center;
+  margin-top: 2rem;
+}
+
+/* Posições dos 29 ícones formando o coração */
+.heart-shape > div:nth-child(1)  { grid-area: 1 / 3 / 2 / 4; }/* Office */
+.heart-shape > div:nth-child(2)  { grid-area: 1 / 7 / 2 / 8; }/* Google */
+.heart-shape > div:nth-child(3)  { grid-area: 2 / 2 / 3 / 3; }/* Jira */
+.heart-shape > div:nth-child(4)  { grid-area: 2 / 4 / 3 / 5; }/* Confluence */
+.heart-shape > div:nth-child(5)  { grid-area: 2 / 6 / 3 / 7; }/* Notion */
+.heart-shape > div:nth-child(6)  { grid-area: 2 / 8 / 3 / 9; }/* Trello */
+.heart-shape > div:nth-child(7)  { grid-area: 3 / 1 / 4 / 2; }/* Miro */
+.heart-shape > div:nth-child(8)  { grid-area: 3 / 3 / 4 / 4; }/* Slack */
+.heart-shape > div:nth-child(9)  { grid-area: 3 / 5 / 4 / 6; }/* Teams */
+.heart-shape > div:nth-child(10) { grid-area: 3 / 7 / 4 / 8; }/* BI */
+.heart-shape > div:nth-child(11) { grid-area: 3 / 9 / 4 / 10; }/* Excel */
+.heart-shape > div:nth-child(12) { grid-area: 4 / 2 / 5 / 3; }/* React */
+.heart-shape > div:nth-child(13) { grid-area: 4 / 4 / 5 / 5; }/* Next */
+.heart-shape > div:nth-child(14) { grid-area: 4 / 6 / 5 / 7; }/* Javascript */
+.heart-shape > div:nth-child(15) { grid-area: 4 / 8 / 5 / 9; }/* Type */
+.heart-shape > div:nth-child(16) { grid-area: 5 / 2 / 6 / 3; }/* Angular */
+.heart-shape > div:nth-child(17) { grid-area: 5 / 4 / 6 / 5; }/* Tail */
+.heart-shape > div:nth-child(18) { grid-area: 5 / 5 / 6 / 6; } /* Git */
+.heart-shape > div:nth-child(19) { grid-area: 5 / 6 / 6 / 7; }/* Wordpress */
+.heart-shape > div:nth-child(20) { grid-area: 5 / 9 / 6 / 9; }/* AWS */
+.heart-shape > div:nth-child(21) { grid-area: 6 / 3 / 7 / 4; }/* Azure */
+.heart-shape > div:nth-child(22) { grid-area: 6 / 5 / 7 / 6; }/* Python */
+.heart-shape > div:nth-child(23) { grid-area: 6 / 8 / 7 / 8; }/* Selenium */
+.heart-shape > div:nth-child(24) { grid-area: 7 / 4 / 8 / 5; }/* Figma */
+.heart-shape > div:nth-child(25) { grid-area: 7 / 5 / 8 / 7; }/* Canva */
+.heart-shape > div:nth-child(26) { grid-area: 8 / 6 / 9 / 6; }/* Photoshop */
+.heart-shape > div:nth-child(27) { grid-area: 9 / 9 / 10 / 5; }/* Corel */
+.heart-shape > div:nth-child(28) { grid-area: 9 / 8 / 7 / 7; }/* Sales */
+.heart-shape > div:nth-child(29) { grid-area: 8 / 9 / 9 / 4; }/* Totvs */

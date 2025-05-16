@@ -1,7 +1,6 @@
-'use client';
+"use client"
 
-import React, { useState } from 'react';
-import { Card, CardBody, CardFooter } from '@nextui-org/card';
+import React, { useState } from "react"
 import {
   SiGoogle,
   SiGit,
@@ -26,122 +25,149 @@ import {
   SiTrello,
   SiMiro,
   SiSlack,
-} from 'react-icons/si';
-import { TfiMicrosoftAlt } from "react-icons/tfi";
-import { BiLogoMicrosoftTeams } from "react-icons/bi";
-import { RiFileExcel2Fill } from "react-icons/ri";
-import { FaAws } from "react-icons/fa";
-import { VscAzure } from "react-icons/vsc";
-import { BsFileBarGraph } from "react-icons/bs";
+} from "react-icons/si"
+import { TfiMicrosoftAlt } from "react-icons/tfi"
+import { BiLogoMicrosoftTeams } from "react-icons/bi"
+import { RiFileExcel2Fill } from "react-icons/ri"
+import { FaAws } from "react-icons/fa"
+import { VscAzure } from "react-icons/vsc"
+import { BsFileBarGraph } from "react-icons/bs"
 
-const technologies = [
+const groupedTechnologies = [
   {
-    category: 'Gestão de Projetos, Análise de dados e relatórios',
+    category: '📈 Gestão e Análise',
     items: [
-      { title: 'Microsoft Office', icon: <TfiMicrosoftAlt color="#217346" size={32} /> },
-      { title: 'Google Workspace', icon: <SiGoogle color="#4285F4" size={32} /> },
-      { title: 'Jira', icon: <SiJira color="#0052CC" size={32} /> },
-      { title: 'Confluence', icon: <SiConfluence color="#172B4D" size={32} /> },
-      { title: 'Notion', icon: <SiNotion color="#000000" size={32} /> },
-      { title: 'Trello', icon: <SiTrello color="#007AC2" size={32} /> },
-      { title: 'Miro', icon: <SiMiro color="#FFDD33" size={32} /> },
-      { title: 'Slack', icon: <SiSlack color="#3F0F3F" size={32} /> },
-      { title: 'Teams', icon: <BiLogoMicrosoftTeams color="#4f42b5" size={32} /> },
-      { title: 'Power BI', icon: <BsFileBarGraph color="#F2C811" size={32} /> },
-      { title: 'Excel', icon: <RiFileExcel2Fill color="#217346" size={32} /> },
+      { title: 'Microsoft Office', icon: <TfiMicrosoftAlt color="#217346" size={30} /> },
+      { title: 'Google Workspace', icon: <SiGoogle color="#4285F4" size={30} /> },
+      { title: 'Jira', icon: <SiJira color="#0052CC" size={30} /> },
+      { title: 'Confluence', icon: <SiConfluence color="#172B4D" size={30} /> },
+      { title: 'Notion', icon: <SiNotion color="#000000" size={30} /> },
+      { title: 'Trello', icon: <SiTrello color="#007AC2" size={30} /> },
+      { title: 'Miro', icon: <SiMiro color="#FFDD33" size={30} /> },
+      { title: 'Slack', icon: <SiSlack color="#3F0F3F" size={30} /> },
+      { title: 'Teams', icon: <BiLogoMicrosoftTeams color="#4f42b5" size={30} /> },
+      { title: 'Power BI', icon: <BsFileBarGraph color="#F2C811" size={30} /> },
+      { title: 'Excel', icon: <RiFileExcel2Fill color="#217346" size={30} /> },
     ],
   },
   {
-    category: 'Desenvolvimento, automação e testes',
+    category: '⚙️ Desenvolvimento',
     items: [
-      { title: 'React', icon: <SiReact color="#61DAFB" size={32} /> },
-      { title: 'Next.js', icon: <SiNextdotjs color="#000000" size={32} /> },
-      { title: 'JavaScript', icon: <SiJavascript color="#F7DF1E" size={32} /> },
-      { title: 'TypeScript', icon: <SiTypescript color="#3178C6" size={32} /> },
-      { title: 'Angular', icon: <SiAngular color="#DD0031" size={32} /> },
-      { title: 'Tailwind CSS', icon: <SiTailwindcss color="#06B6D4" size={32} /> },
-      { title: 'Git', icon: <SiGit color="#F05032" size={32} /> },
-      { title: 'WordPress', icon: <SiWordpress color="#21759B" size={32} /> },
-      { title: 'AWS', icon: <FaAws color="#FF9900" size={32} /> },
-      { title: 'Azure', icon: <VscAzure color="#0078D4" size={32} /> },
-      { title: 'Python', icon: <SiPython color="#3776AB" size={32} /> },
-      { title: 'Selenium', icon: <SiSelenium color="#43B02A" size={32} /> },
+      { title: 'React', icon: <SiReact color="#61DAFB" size={30} /> },
+      { title: 'Next.js', icon: <SiNextdotjs color="#000000" size={30} /> },
+      { title: 'JavaScript', icon: <SiJavascript color="#F7DF1E" size={30} /> },
+      { title: 'TypeScript', icon: <SiTypescript color="#3178C6" size={30} /> },
+      { title: 'Angular', icon: <SiAngular color="#DD0031" size={30} /> },
+      { title: 'Tailwind CSS', icon: <SiTailwindcss color="#06B6D4" size={30} /> },
+      { title: 'Git', icon: <SiGit color="#F05032" size={30} /> },
+      { title: 'WordPress', icon: <SiWordpress color="#21759B" size={30} /> },
+      { title: 'AWS', icon: <FaAws color="#FF9900" size={30} /> },
+      { title: 'Azure', icon: <VscAzure color="#0078D4" size={30} /> },
+      { title: 'Python', icon: <SiPython color="#3776AB" size={30} /> },
+      { title: 'Selenium', icon: <SiSelenium color="#43B02A" size={30} /> },
     ],
   },
   {
-    category: 'Ferramentas de design e criação',
+    category: '🎨 Design e criação',
     items: [
-      { title: 'Figma', icon: <SiFigma color="#F24E1E" size={32} /> },
-      { title: 'Canva', icon: <SiCanva color="#00C4CC" size={32} /> },
-      { title: 'Photoshop', icon: <SiAdobephotoshop color="#001833" size={32} /> },
-      { title: 'CorelDraw', icon: <SiCoreldraw color="#F6821F" size={32} /> },
+      { title: 'Figma', icon: <SiFigma color="#F24E1E" size={40} /> },
+      { title: 'Canva', icon: <SiCanva color="#00C4CC" size={40} /> },
+      { title: 'Photoshop', icon: <SiAdobephotoshop color="#001833" size={40} /> },
+      { title: 'CorelDraw', icon: <SiCoreldraw color="#F6821F" size={40} /> },
     ],
   },
   {
-    category: 'CRM &  ERP',
+    category: '💼 CRM &  ERP',
     items: [
-      { title: 'Salesforce', icon: <SiSalesforce color="#00A1E0" size={32} /> },
-      { title: 'TOTVS', icon: <SiTotvs color="#F58634" size={32} /> },
+      { title: 'Salesforce', icon: <SiSalesforce color="#00A1E0" size={40} /> },
+      { title: 'TOTVS', icon: <SiTotvs color="#F58634" size={40} /> },
     ],
   },
-];
+]
 
-export default function Stack() {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
+export default function TecnologiasPage() {
+  const [filter, setFilter] = useState<string>("Todas")
 
-  const toggle = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
+  // Junta todos os ícones para o filtro "Todas"
+  const allItems = groupedTechnologies.flatMap((g) => g.items).slice(0, 29)
+
+  const filteredGroups =
+    filter === "Todas"
+      ? groupedTechnologies
+      : groupedTechnologies.filter((g) => g.category === filter)
 
   return (
-    <section className="flex flex-col items-center justify-center px-4 text-center pb-20 max-w-4xl mx-auto">
-      <span className="chip mb-4">Stack</span>
-      <h1 className="my-10 text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter leading-tight text-center">
+    <main className="container px-4 py-20 mx-auto text-center">
+      <span className="chip">Stack</span>
+      <h1 className="my-10 text-4xl md:text-5xl lg:text-6xl leading-tight font-bold tracking-tighter">
         Tecnologias
       </h1>
 
-      {technologies.map(({ category, items }, index) => (
-        <div key={category} className="w-full mb-8">
-<button
-  onClick={() => toggle(index)}
-  className="w-60 mx-auto px-6 py-4 text-center text-lg font-semibold flex justify-center items-center gap-2 whitespace-nowrap
-    hover:bg-gray-100 dark:hover:bg-zinc-800 transition-colors rounded-md"
-  aria-expanded={openIndex === index}
->
-  {category}
-  <span
-  className={`transform transition-transform duration-300 ${
-    openIndex === index ? 'rotate-180 text-pink-500' : ''
-  }`}
->
-  ▼
-</span>
-</button>
+      {/* Botões de filtro */}
+      <div className="mb-6 flex flex-wrap justify-center gap-3">
+        <button
+          onClick={() => setFilter("Todas")}
+          className={`px-4 py-2 rounded-full font-semibold ${
+            filter === "Todas"
+              ? "bg-pink-400 text-white"
+              : "bg-pink-200 text-gray-800 hover:bg-pink-300"
+          }`}
+        >
+          Todas
+        </button>
 
-          <div
-            className={`overflow-hidden transition-[max-height] duration-300 ease-in-out px-6 ${
-              openIndex === index ? 'max-h-[1000px] py-6' : 'max-h-0 py-0'
+        {groupedTechnologies.map(({ category }) => (
+          <button
+            key={category}
+            onClick={() => setFilter(category)}
+            className={`px-4 py-2 rounded-full font-semibold ${
+              filter === category
+                ? "bg-pink-400 text-white"
+                : "bg-pink-200 text-gray-800 hover:bg-pink-300"
             }`}
           >
-            <div className="flex flex-wrap justify-center gap-4">
-              {items.map(({ title, icon }) => (
-                <Card
-                  key={title}
-                  className="rounded-lg p-3 shadow-sm transform transition-transform hover:scale-110 flex flex-col items-center justify-center min-w-[80px]"
-                  isHoverable
-                  isPressable
-                  style={{ width: 90, height: 90 }}
-                >
-                  <CardBody className="flex justify-center items-center p-1">{icon}</CardBody>
-                  <CardFooter className="justify-center p-1 text-center">
-                    <small className="text-xs font-medium">{title}</small>
-                  </CardFooter>
-                </Card>
-              ))}
-            </div>
+            {category}
+          </button>
+        ))}
+      </div>
+
+      {/* Lista de tecnologias */}
+      <div className="space-y-10">
+        {filter === "Todas" ? (
+          // Quando for "Todas", usa o grid com coração
+          <div className="heart-shape mx-auto max-w-[460px]">
+            {allItems.map(({ title, icon }) => (
+              <div
+                key={title}
+                title={title}
+                className="flex items-center justify-center cursor-pointer p-2 rounded-md transition-transform duration-200 hover:scale-110 hover:bg-pink-50"
+                style={{ width: 48, height: 48 }}
+              >
+                {icon}
+              </div>
+            ))}
           </div>
-        </div>
-      ))}
-    </section>
-  );
+        ) : (
+          // Se não, mostra por categoria normal
+          filteredGroups.map(({ items }) => (
+            <section key={items[0].title}>
+              <div className="flex flex-wrap justify-center gap-6 max-w-4xl mx-auto">
+                {items.map(({ title, icon }) => (
+                  <div
+                    key={title}
+                    className="flex flex-col items-center justify-center gap-2 cursor-pointer p-2 rounded-md transition-transform duration-200 hover:scale-110 hover:bg-pink-50"
+                    style={{ minWidth: "120px", maxWidth: "120px" }}
+                    title={title}
+                  >
+                    <div>{icon}</div>
+                    <span className="text-sm font-semibold text-gray-900 hover:text-pink-500">{title}</span>
+                  </div>
+                ))}
+              </div>
+            </section>
+          ))
+        )}
+      </div>
+    </main>
+  )
 }
