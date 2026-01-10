@@ -5,7 +5,7 @@
 
 <h1 align="center">Portfólio Analia Silva </h1>
 
-![Portfólio (1)-1](https://github.com/analiavictoria/my-portfolio/assets/58526878/fc056741-4e3e-423a-9d97-0a7439f992f1)
+![image](https://github.com/analiavictoria/my-portfolio/assets/58526878/41c79483-ebe5-4ada-abc5-d505cd0c24ef)
 
 <h4 align="center"><a href="https://liasportfolio.vercel.app">Clique para visitar o projeto</a></h4>
 
